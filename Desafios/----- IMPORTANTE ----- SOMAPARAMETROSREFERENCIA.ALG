@@ -1,0 +1,44 @@
+Algoritmo "SOMAPARAMETROSREFERENCIA"
+
+Var
+   W, X, Y, Z : INTEIRO
+   
+PROCEDIMENTO SOMA1 ( A, B : INTEIRO) // NESTE CASO W E X IRÃO EMPRESTAR SEU VALOR PARA AS VARIAVEIS LOCAIS
+INICIO                               // AS LOCAIS MUDAM SEU VALOR, MAS AS GLOBAIS NÃO !!!
+
+   A <- A + 1
+   B <- B + 2
+   
+   ESCREVAL ("VALOR DE A =", A)
+   ESCREVAL ("VALOR DE B =", B)
+   ESCREVAL ("SOMA A + B =", A+B)
+
+FIMPROCEDIMENTO
+
+PROCEDIMENTO SOMA2 ( VAR C, D : INTEIRO) // NESTE CASO Y E Z IRÃO SER ALTERADAS JUNTAMENTE AS VARIAVEIS LOCAIS
+INICIO                                   // Y E Z ESTÃO LINKADOS AO C E D
+                                         // PORTANTO QUANDO ALTERAR OS VALORES DE C TAMBEM IRA ALTERAR O VALOR DE Y
+   C <- C + 1
+   D <- D + 2
+
+   ESCREVAL ("VALOR DE C =", C)
+   ESCREVAL ("VALOR DE D =", D)
+   ESCREVAL ("SOMA C + D =", C+D)
+
+FIMPROCEDIMENTO
+   
+Inicio
+
+   W <- 4
+   X <- 8
+   SOMA1 (W, X)
+   ESCREVAL ("VALOR DE W =", W)
+   ESCREVAL ("VALOR DE X =", X)
+   
+   Y <- 9
+   Z <- 17
+   SOMA2 (Y, Z)
+   ESCREVAL ("VALOR DE Y =", Y)
+   ESCREVAL ("VALOR DE Z =", Z)
+
+Fimalgoritmo

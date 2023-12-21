@@ -1,0 +1,32 @@
+Algoritmo "MATRIZPAR"
+
+Var
+   VALORES: VETOR [1..3,1..3] DE INTEIRO
+   LINHA, COLUNA, TOTPAR: INTEIRO
+Inicio
+
+   TOTPAR <- 0
+   
+   PARA LINHA <- 1 ATE 3 FACA
+      PARA COLUNA <- 1 ATE 3 FACA
+         ESCREVA("DIGITE UM VALOR DA POSIÇÃO [",LINHA,",",COLUNA,"]: ")
+         LEIA (VALORES[LINHA,COLUNA])
+      FIMPARA
+   FIMPARA
+
+   ESCREVAL("MATRIZ: ")
+   ESCREVAL("--------------------")
+
+   PARA LINHA <- 1 ATE 3 FACA
+      PARA COLUNA <- 1 ATE 3 FACA
+         SE (VALORES[LINHA,COLUNA] % 2 = 0) ENTAO
+            ESCREVA ("{",VALORES[LINHA,COLUNA]:2,"}")
+            TOTPAR <- TOTPAR + 1
+            SENAO
+               ESCREVA(VALORES[LINHA,COLUNA]:4)
+         FIMSE
+      FIMPARA
+      ESCREVAL()
+   FIMPARA
+   ESCREVAL ("AO TODO TEMOS ",TOTPAR," VALORES PARES")
+Fimalgoritmo

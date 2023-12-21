@@ -1,0 +1,34 @@
+Algoritmo "ALUNO APROVADO OU REPROVADO"
+
+Var
+
+   NOTA1, NOTA2, NOTA3, NOTAF : REAL
+
+Inicio
+
+      ESCREVAL("-------------------")
+      ESCREVAL(" ESCOLA PROMISSORA ")
+      ESCREVAL("-------------------")
+
+      ESCREVAL("DIGITE A PRIMEIRA NOTA DO ALUNO:")
+      LEIA (NOTA1)
+
+      ESCREVAL("DIGITE A SEGUNDA NOTA DO ALUNO:")
+      LEIA (NOTA2)
+
+      ESCREVAL("DIGITE A TERCEIRA NOTA DO ALUNO:")
+      LEIA (NOTA3)
+
+      NOTAF <- (NOTA1 + NOTA2 + NOTA3) / 3
+
+      SE (NOTAF >= 7) E (NOTAF < 10) ENTAO
+         ESCREVAL("ESTA É A NOTA FINAL DO ALUNO: ",NOTAF:3:2, " E ELE ESTÁ APROVADO!!!")
+      SENAO
+           SE (NOTAF >=5) E (NOTAF <7) ENTAO
+              ESCREVAL("ESTA É A NOTA FINAL DO ALUNO: ", NOTAF:3:2," E ELE ESTÁ EM RECUPERAÇÃO")
+           SENAO
+                ESCREVAL ("ALUNO REPROVADO")
+           FIMSE
+      FIMSE
+
+Fimalgoritmo

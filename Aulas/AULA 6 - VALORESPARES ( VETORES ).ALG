@@ -1,0 +1,29 @@
+Algoritmo "VALORESPARES"
+
+Var
+   VAL: VETOR [1..7] DE INTEIRO
+   I, TOTPAR, TOTIMP: INTEIRO
+Inicio
+
+   TOTPAR <- 0
+   TOTIMP <- 0
+   
+   PARA I <- 1 ATE 7 FACA
+      ESCREVA("DIGITE O ",I,"° VALOR: ")
+      LEIA (VAL[I])
+   FIMPARA
+
+   PARA I <- 1 ATE 7 FACA
+      SE (VAL[I] % 2 = 0) ENTAO
+         TOTPAR <- TOTPAR + 1
+         SENAO
+            TOTIMP <- TOTIMP + 1
+      FIMSE
+      SE (VAL[I] % 2 = 0) ENTAO
+         ESCREVAL("VALOR PAR NA POSIÇÃO ",I)
+      FIMSE
+   FIMPARA
+   
+   ESCREVAL("AO TODO EXISTE ",TOTPAR," NUMEROS PARES")
+   ESCREVAL("AO TODO EXISTE ",TOTIMP," NUMEROS IMPARES")
+Fimalgoritmo

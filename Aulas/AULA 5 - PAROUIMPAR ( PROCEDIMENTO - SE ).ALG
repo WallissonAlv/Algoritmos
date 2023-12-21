@@ -1,0 +1,20 @@
+Algoritmo "PAROUIMPAR"
+
+Var
+   N : INTEIRO
+   
+PROCEDIMENTO PAROUIMPAR(V: INTEIRO)
+INICIO
+
+   SE (V%2=0) ENTAO
+      ESCREVA ("O NUMERO ",V," E PAR")
+      SENAO
+         ESCREVA ("O NUMERO ",V," E IMPAR")
+   FIMSE
+
+FIMPROCEDIMENTO
+Inicio
+   ESCREVA ("DIGITE UM NUMERO: ")
+   LEIA (N)
+   PAROUIMPAR (N)
+Fimalgoritmo

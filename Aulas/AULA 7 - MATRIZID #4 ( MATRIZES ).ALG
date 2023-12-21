@@ -1,0 +1,57 @@
+Algoritmo "MATRIZIDENTIDADE"
+
+Var
+   MATRIZID: VETOR [1..4,1..4] DE INTEIRO
+   LINHA, COLUNA, SOMADP, PRODUTO2L, MAIOR3C: INTEIRO
+Inicio
+
+   SOMADP <- 0
+   PRODUTO2L <- 1
+   MAIOR3C <- 0
+   
+   PARA LINHA <- 1 ATE 4 FACA
+      PARA COLUNA <- 1 ATE 4 FACA
+         ESCREVA("DIGITE UM VALOR NA POSIÇAO [",LINHA,",",COLUNA,"]: ")
+         LEIA (MATRIZID[LINHA,COLUNA])
+      FIMPARA
+   FIMPARA
+   
+   ESCREVAL("MATRIZ: ")
+   ESCREVAL("-------------------")
+   
+   PARA LINHA <- 1 ATE 4 FACA
+      PARA COLUNA <- 1 ATE 4 FACA
+         SE (LINHA = COLUNA) ENTAO
+            SOMADP <- SOMADP + MATRIZID[LINHA,COLUNA]
+         FIMSE
+
+         SE (LINHA = 2) ENTAO
+            PRODUTO2L <- PRODUTO2L * MATRIZID[LINHA,COLUNA]
+         FIMSE
+
+         SE (COLUNA = 3) ENTAO
+            SE (MATRIZID[LINHA,COLUNA] > MAIOR3C) ENTAO
+               MAIOR3C <- MATRIZID[LINHA,COLUNA]
+            FIMSE
+         FIMSE
+
+         ESCREVA (MATRIZID[LINHA,COLUNA]:4)
+      FIMPARA
+      ESCREVAL()
+   FIMPARA
+   
+   // PARA COLUNA <- 1 ATE 4 FACA                  |
+   // PRODUTO2L <- PRODUTO2L * MATRIZID[2,COLUNA]  |
+   // FIMPARA                                      |
+   
+   // PARA LINHA <- 1 ATE 4 FACA
+   //    SE (MATRIZID [LINHA,3] > MAIOR3C) ENTAO
+   //    MAIOR3C <- MATRIZID[LINHA,3]
+   //    FIMSE
+   // FIMPARA
+   
+   ESCREVAL("-------------------")
+   ESCREVAL("A SOMA DA DIAGONAL PRINCIPAL É ",SOMADP)
+   ESCREVAL("O PRODUTO DA 2° LINHA É: ",PRODUTO2L)
+   ESCREVAL("O MAIOR VALOR DA 3° COLUNA É: ",MAIOR3C)
+Fimalgoritmo
