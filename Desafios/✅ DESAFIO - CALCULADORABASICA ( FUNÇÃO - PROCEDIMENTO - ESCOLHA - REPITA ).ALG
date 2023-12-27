@@ -8,45 +8,45 @@ Var
 Procedimento Topo ()
 Inicio
    Escreval("====================")
-   Escreval(" CALCULADORA B¡SICA ")
+   Escreval(" CALCULADORA B√ÅSICA ")
    Escreval("====================")
 Fimprocedimento
 
 Procedimento Topo1 ()
 Inicio
    Escreval("====================")
-   Escreval("       AdiÁ„o       ")
+   Escreval("       Adi√ß√£o       ")
    Escreval("====================")
 Fimprocedimento
 
 Procedimento Topo2 ()
 Inicio
    Escreval("=====================")
-   Escreval("      SubtraÁ„o      ")
+   Escreval("      Subtra√ß√£o      ")
    Escreval("=====================")
 Fimprocedimento
 
 Procedimento Topo3 ()
 Inicio
    Escreval("=====================")
-   Escreval("    MultiplicaÁ„o    ")
+   Escreval("    Multiplica√ß√£o    ")
    Escreval("=====================")
 Fimprocedimento
 
 Procedimento Topo4 ()
 Inicio
    Escreval("=====================")
-   Escreval("       Divis„o       ")
+   Escreval("       Divis√£o       ")
    Escreval("=====================")
 Fimprocedimento
 
 
 Procedimento Esc ()
 Inicio
-   Escreval("[1] - AdiÁ„o")
-   Escreval("[2] - SubtraÁ„o")
-   Escreval("[3] - MultiplicaÁ„o")
-   Escreval("[4] - Divis„o")
+   Escreval("[1] - Adi√ß√£o")
+   Escreval("[2] - Subtra√ß√£o")
+   Escreval("[3] - Multiplica√ß√£o")
+   Escreval("[4] - Divis√£o")
    Escreval("[5] - Sair")
    Escreval("====================")
    Leia (Esc)
@@ -83,7 +83,7 @@ Inicio
             Escreval("Digite outro valor: ")
             Leia(V2)
             Soma <- Som(V1,V2)
-            Escreval("A soma dos valores È ",Soma)
+            Escreval("A soma dos valores √© ",Soma)
 
             Escreva ("| Enter para continuar! | ESC para finalizar | R para Retornar |")
             Leia (Resp)
@@ -97,7 +97,7 @@ Inicio
             Escreval("Digite outro valor: ")
             Leia(V2)
             Subt <- Sub(V1,V2)
-            Escreval("A SubtraÁ„o dos valores È ",Subt)
+            Escreval("A Subtra√ß√£o dos valores √© ",Subt)
 
             Escreva ("| Enter para continuar! | ESC para finalizar | R para Retornar |")
             Leia (Resp)
@@ -111,7 +111,7 @@ Inicio
             Escreval("Digite outro valor: ")
             Leia(V2)
             Mult <- Mul(V1,V2)
-            Escreval("A MultiplicaÁ„o dos valores È ",Mult)
+            Escreval("A Multiplica√ß√£o dos valores √© ",Mult)
 
             Escreva ("| Enter para continuar! | ESC para finalizar | R para Retornar |")
             Leia (Resp)
@@ -125,7 +125,7 @@ Inicio
             Escreval("Digite outro valor: ")
             Leia(V2)
             Divi <- Div_(V1,V2)
-            Escreval("A Divis„o dos valores È ",Divi)
+            Escreval("A Divis√£o dos valores √© ",Divi)
 
             Escreva ("| Enter para continuar! | ESC para finalizar | R para Retornar |")
             Leia (Resp)
